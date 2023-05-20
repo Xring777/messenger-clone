@@ -80,7 +80,7 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({
               <Select
                 disabled={isLoading}
                 label="Members"
-                options={users.map((user) => ({
+                options={users.map((user: any) => ({
                   value: user.id,
                   label: user.name,
                 }))}
